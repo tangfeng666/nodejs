@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+	    <ul>
+	    	<% for(var i in acg){ %>
+	    		<li>
+	    			<p>作者：<%= acg[i].author %></p>
+	    			<p>作品：<%= acg[i].cname %></p>
+	    		</li>
+	    	<% } %>
+	    </ul>
+	    <a href='/acg/add'>添加</a>
+    </body>
+</html>

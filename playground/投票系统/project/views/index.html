@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    	<% for(var i in characters){ %>
+			<ol>
+				<li>姓名：<%= characters[i].name %></li>
+				<li>性别：<%= characters[i].gender %></li>
+				<li>标签：<%= characters[i].tags %></li>
+				<li>热度：<%= characters[i].hot %></li>
+				<li>作品：<%= characters[i].acg %></li>
+				<li>作者：<%= characters[i].author %></li>
+				<li>收录日期：<%= characters[i].recordDate %></li>
+				<li>简介：<%= characters[i].introduce %></li>
+			</ol>
+		<% } %>
+    </body>
+</html>
